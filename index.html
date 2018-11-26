@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <base href="https://cp-algorithms.com"/>
-    <title>Main Page - Competitive Programming Algorithms</title>
-    <!-- <script src="https://e-maxx-eng.github.io/e-maxx-eng/js/jq.js"></script> -->
+    <title>Efficient integer factorization  - Competitive Programming Algorithms</title>
+    <script src="https://e-maxx-eng.github.io/e-maxx-eng/js/jq.js"></script>
     <script src="https://e-maxx-eng.github.io/e-maxx-eng/js/common.js"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -32,372 +32,275 @@
         <span id="menu">
             <a href="/test.php#" title="Changes History">Page Authors</a>
         </span>
+        <span id="search" style="display:inline-block;width:200px;float:right;margin-top:7px;margin-right:20px;">
+            <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'https://cp-algorithms.com/search-results.html','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'en','logo':'rb','publicname':'search e-maxx-eng','suggest':true,'target':'_self','tld':'com','type':2,'usebigdictionary':true,'searchid':2314495,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':null,'input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}"><form action="https://yandex.com/search/site/" method="get" target="_self" accept-charset="utf-8"><input type="hidden" name="searchid" value="2314495"/><input type="hidden" name="l10n" value="en"/><input type="hidden" name="reqenc" value=""/><input type="search" name="text" value=""/><input type="submit" value="Search"/></form></div><style type="text/css">.ya-page_js_yes .ya-site-form_inited_no { display: none; }</style><script type="text/javascript">(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+        </span>
     </div>
-<h1 data-toc=\"off\">E-Maxx Algorithms in English</h1>
-
-<p><em>The goal of this project is to translate at least some pages of the wonderful resource
-<a href="http://e-maxx.ru/algo">http://e-maxx.ru/algo</a> which provides descriptions of many special algorithms
-especially popular in field of competitive programming.</em></p>
-
-<h2>Articles</h2>
-
-<h3>Algebra</h3>
-
-<ul>
-<li><strong>Fundamentals</strong>
-
-<ul>
-<li><a href="./algebra/binary-exp.html">Binary Exponentiation</a></li>
-<li><a href="./algebra/euclid-algorithm.html">Euclidean algorithm for computing the greatest common divisor</a></li>
-<li><a href="./algebra/extended-euclid-algorithm.html">Extended Euclidean Algorithm</a></li>
-<li><a href="./algebra/linear-diophantine-equation.html">Linear Diophantine Equations</a></li>
-<li><a href="./algebra/fibonacci-numbers.html">Fibonacci Numbers</a></li>
-</ul></li>
-<li><strong>Prime numbers</strong>
-
-<ul>
-<li><a href="./algebra/sieve-of-eratosthenes.html">Sieve of Eratosthenes</a></li>
-<li><a href="./algebra/prime-sieve-linear.html">Sieve of Eratosthenes Having Linear Time Complexity</a></li>
-</ul></li>
-<li><strong>Number-theoretic functions</strong>
-
-<ul>
-<li><a href="./algebra/phi-function.html">Euler's totient function</a></li>
-<li><a href="./algebra/divisors.html">Number of divisors / sum of divisors</a></li>
-</ul></li>
-<li><strong>Modular arithmetic</strong>
-
-<ul>
-<li><a href="./algebra/module-inverse.html">Modular Inverse</a></li>
-<li><a href="./algebra/linear_congruence_equation.html">Linear Congruence Equation</a></li>
-<li><a href="./algebra/chinese-remainder-theorem.html">Chinese Remainder Theorem</a></li>
-<li><a href="./algebra/factorial-modulo.html">Factorial modulo $p$</a></li>
-<li><a href="./algebra/discrete-root.html">Discrete Root</a></li>
-<li><a href="./algebra/primitive-root.html">Primitive Root</a></li>
-<li><a href="./algebra/discrete-log.html">Discrete Log</a></li>
-</ul></li>
-<li><strong>Number systems</strong>
-
-<ul>
-<li><a href="./algebra/balanced-ternary.html">Balanced Ternary</a></li>
-<li><a href="./algebra/gray-code.html">Gray code</a></li>
-</ul></li>
-<li><strong>Miscellaneous</strong>
-
-<ul>
-<li><a href="./algebra/all-submasks.html">Enumerating submasks of a bitmask</a></li>
-<li><a href="./algebra/big-integer.html">Arbitrary-Precision Arithmetic</a></li>
-<li><a href="./algebra/fft.html">Fast Fourier transform</a></li>
-</ul></li>
-</ul>
-
-<h3>Data Structures</h3>
-
-<ul>
-<li><strong>Fundamentals</strong>
-
-<ul>
-<li><a href="./data_structures/disjoint_set_union.html">Disjoint Set Union</a></li>
-<li><a href="./data_structures/stack_queue_modification.html">Minimum Stack / Minimum Queue</a></li>
-<li><a href="./data_structures/sparse-table.html">Sparse Table</a></li>
-<li><a href="./data_structures/fenwick.html">Fenwick Tree</a></li>
-</ul></li>
-<li><strong>Powerful</strong>
-
-<ul>
-<li><a href="./data_structures/sqrt_decomposition.html">Sqrt Decomposition</a></li>
-<li><a href="./data_structures/segment_tree.html">Segment Tree</a></li>
-<li><a href="./data_structures/treap.html">Treap</a></li>
-<li><a href="./data_structures/sqrt-tree.html">Sqrt Tree</a></li>
-<li><a href="./data_structures/randomized_heap.html">Randomized Heap</a></li>
-</ul></li>
-<li><strong>Advanced</strong>
-
-<ul>
-<li><a href="./data_structures/deleting_in_log_n.html">Deleting from a data structure in O(T(n)log n)</a></li>
-</ul></li>
-</ul>
-
-<h3>Dynamic Programming</h3>
-
-<ul>
-<li><strong>DP optimizations</strong>
-
-<ul>
-<li><a href="./dynamic_programming/divide-and-conquer-dp.html">Divide and Conquer DP</a></li>
-</ul></li>
-<li><strong>Tasks</strong>
-
-<ul>
-<li><a href="./dynamic_programming/profile-dynamics.html">Dynamic Programming on Broken Profile. Problem \"Parquet\"</a></li>
-<li><a href="./dynamic_programming/zero_matrix.html">Finding the largest zero submatrix</a></li>
-</ul></li>
-</ul>
-
-<h3>String Processing</h3>
-
-<ul>
-<li><strong>Fundamentals</strong>
-
-<ul>
-<li><a href="./string/string-hashing.html">String Hashing</a></li>
-<li><a href="./string/rabin-karp.html">Rabin-Karp for String Matching</a></li>
-<li><a href="./string/prefix-function.html">Prefix function</a></li>
-<li><a href="./string/z-function.html">Z-function</a></li>
-<li><a href="./string/suffix-array.html">Suffix Array</a></li>
-<li><a href="./string/aho_corasick.html">Aho-Corasick algorithm</a></li>
-</ul></li>
-<li><strong>Advanced</strong>
-
-<ul>
-<li><a href="./string/suffix-tree-ukkonen.html">Suffix Tree</a></li>
-<li><a href="./string/suffix-automaton.html">Suffix Automaton</a></li>
-<li><a href="./string/lyndon_factorization.html">Lyndon factorization</a></li>
-</ul></li>
-<li><strong>Tasks</strong>
-
-<ul>
-<li><a href="./string/expression_parsing.html">Expression parsing</a></li>
-<li><a href="./string/manacher.html">Finding all sub-palindromes in O(N)</a></li>
-<li><a href="./string/main_lorentz.html">Finding repetitions</a></li>
-</ul></li>
-</ul>
-
-<h3>Linear Algebra</h3>
-
-<ul>
-<li><strong>Equation systems</strong>
-
-<ul>
-<li><a href="./linear_algebra/linear-system-gauss.html">Gauss &amp; System of Linear Equations</a></li>
-<li><a href="./linear_algebra/determinant-gauss.html">Gauss &amp; Determinant</a></li>
-<li><a href="./linear_algebra/determinant-kraut.html">Kraut &amp; Determinant</a></li>
-<li><a href="./linear_algebra/rank-matrix.html">Rank of a matrix</a></li>
-</ul></li>
-</ul>
-
-<h3>Combinatorics</h3>
-
-<ul>
-<li><strong>Fundamentals</strong>
-
-<ul>
-<li><a href="./algebra/factorial-divisors.html">Finding Power of Factorial Divisor</a></li>
-<li><a href="./combinatorics/binomial-coefficients.html">Binomial Coefficients</a></li>
-<li><a href="./combinatorics/catalan-numbers.html">Catalan Numbers</a></li>
-</ul></li>
-<li><strong>Techniques</strong>
-
-<ul>
-<li><a href="./combinatorics/inclusion-exclusion.html">The Inclusion-Exclusion Principle</a></li>
-<li><a href="./combinatorics/burnside.html">Burnside's lemma / Pólya enumeration theorem</a></li>
-<li><a href="./combinatorics/stars_and_bars.html">Stars and bars</a></li>
-<li><a href="./combinatorics/generating_combinations.html">Generating all $K$-combinations</a></li>
-</ul></li>
-<li><strong>Tasks</strong>
-
-<ul>
-<li><a href="./combinatorics/bishops-on-chessboard.html">Placing Bishops on a Chessboard</a></li>
-<li><a href="./combinatorics/bracket_sequences.html">Balanced bracket sequences</a></li>
-<li><a href="./combinatorics/counting_labeled_graphs.html">Counting labeled graphs</a></li>
-</ul></li>
-</ul>
-
-<h3>Game Theory</h3>
-
-<ul>
-<li><strong>Tasks</strong>
-
-<ul>
-<li><a href="./game_theory/games_on_graphs.html">Games on arbitrary graphs</a></li>
-</ul></li>
-</ul>
-
-<h3>Numerical Methods</h3>
-
-<ul>
-<li><strong>Search</strong>
-
-<ul>
-<li><a href="./num_methods/ternary_search.html">Ternary Search</a></li>
-<li><a href="./num_methods/roots_newton.html">Newton's method for finding roots</a></li>
-</ul></li>
-<li><strong>Integration</strong>
-
-<ul>
-<li><a href="./num_methods/simpson-integration.html">Integration by Simpson's formula</a></li>
-</ul></li>
-</ul>
-
-<h3>Geometry</h3>
-
-<ul>
-<li><strong>Elementary algorithms, intersections</strong>
-
-<ul>
-<li><a href="./geometry/basic-geometry.html">Basic Geometry</a></li>
-<li><a href="./geometry/segment-to-line.html">Finding the equation of a line for a segment</a></li>
-<li><a href="./geometry/lines-intersection.html">Intersection Point of Lines</a></li>
-<li><a href="./geometry/check-segments-intersection.html">Check if two segments intersect</a></li>
-<li><a href="./geometry/segments-intersection.html">Intersection of Segments</a></li>
-<li><a href="./geometry/circle-line-intersection.html">Circle-Line Intersection</a></li>
-<li><a href="./geometry/circle-circle-intersection.html">Circle-Circle Intersection</a></li>
-<li><a href="./geometry/length-of-segments-union.html">Length of the union of segments</a></li>
-</ul></li>
-<li><strong>Polygons</strong>
-
-<ul>
-<li><a href="./geometry/oriented-triangle-area.html">Oriented area of a triangle</a></li>
-<li><a href="./geometry/area-of-simple-polygon.html">Area of simple polygon</a></li>
-<li><a href="./geometry/point-in-convex-polygon.html">Check if points belong to the convex polygon in O(log N)</a></li>
-<li><a href="./geometry/picks-theorem.html">Pick's Theorem - area of lattice polygons</a></li>
-<li><a href="./geometry/lattice-points.html">Lattice points of non-lattice polygon</a></li>
-</ul></li>
-<li><strong>Convex hull</strong>
-
-<ul>
-<li><a href="./geometry/grahams-scan-convex-hull.html">Convex hull construction using Graham's Scan</a></li>
-<li><a href="./geometry/convex_hull_trick.html">Convex hull trick and Li Chao tree</a></li>
-</ul></li>
-<li><strong>Sweep-line</strong>
-
-<ul>
-<li><a href="./geometry/intersecting_segments.html">Search for a pair of intersecting segments</a></li>
-<li><a href="./geometry/point-location.html">Point location in O(log N)</a></li>
-</ul></li>
-<li><strong>Miscellaneous</strong>
-
-<ul>
-<li><a href="./geometry/nearest_points.html">Finding the nearest pair of points</a></li>
-<li><a href="./geometry/delaunay.html">Delaunay triangulation and Voronoi diagram</a></li>
-</ul></li>
-</ul>
-
-<h3>Graphs</h3>
-
-<ul>
-<li><strong>Graph traversal</strong>
-
-<ul>
-<li><a href="./graph/breadth-first-search.html">Breadth First Search</a></li>
-<li><a href="./graph/depth-first-search.html">Depth First Search</a></li>
-</ul></li>
-<li><strong>Connected components, bridges, articulations points</strong>
-
-<ul>
-<li><a href="./graph/search-for-connected-components.html">Finding Connected Components</a></li>
-<li><a href="./graph/bridge-searching.html">Finding Bridges in O(N+M)</a></li>
-<li><a href="./graph/bridge-searching-online.html">Finding Bridges Online</a></li>
-<li><a href="./graph/cutpoints.html">Finding Articulation Points in O(N+M)</a></li>
-<li><a href="./graph/strongly-connected-components.html">Strongly Connected Components and Condensation Graph</a></li>
-</ul></li>
-<li><strong>Single-source shortest paths</strong>
-
-<ul>
-<li><a href="./graph/dijkstra.html">Dijkstra - finding shortest paths from given vertex</a></li>
-<li><a href="./graph/dijkstra_sparse.html">Dijkstra on sparse graphs</a></li>
-<li><a href="./graph/bellman_ford.html">Bellman-Ford - finding shortest paths with negative weights</a></li>
-<li><a href="./graph/desopo_pape.html">D´Esopo-Pape algorithm</a></li>
-</ul></li>
-<li><strong>All-pairs shortest paths</strong>
-
-<ul>
-<li><a href="./graph/all-pair-shortest-path-floyd-warshall.html">Floyd-Warshall - finding all shortest paths</a></li>
-<li><a href="./graph/fixed_length_paths.html">Number of paths of fixed length / Shortest paths of fixed length</a></li>
-</ul></li>
-<li><strong>Spanning trees</strong>
-
-<ul>
-<li><a href="./graph/mst_prim.html">Minimum Spanning Tree - Prim's Algorithm</a></li>
-<li><a href="./graph/mst_kruskal.html">Minimum Spanning Tree - Kruskal</a></li>
-<li><a href="./graph/mst_kruskal_with_dsu.html">Minimum Spanning Tree - Kruskal with Disjoint Set Union</a></li>
-<li><a href="./graph/kirchhoff-theorem.html">Kirchhoff Theorem</a></li>
-<li><a href="./graph/pruefer_code.html">Prüfer code</a></li>
-</ul></li>
-<li><strong>Cycles</strong>
-
-<ul>
-<li><a href="./graph/finding-cycle.html">Checking a graph for acyclicity and finding a cycle in O(M)</a></li>
-<li><a href="./graph/finding-negative-cycle-in-graph.html">Finding a Negative Cycle in the Graph</a></li>
-<li><a href="./graph/euler_path.html">Eulerian Path</a></li>
-</ul></li>
-<li><strong>Lowest common ancestor</strong>
-
-<ul>
-<li><a href="./graph/lca.html">Lowest Common Ancestor</a></li>
-<li><a href="./graph/lca_binary_lifting.html">Lowest Common Ancestor - Binary Lifting</a></li>
-<li><a href="./graph/lca_farachcoltonbender.html">Lowest Common Ancestor - Farach-Colton and Bender algorithm</a></li>
-<li><a href="./graph/rmq_linear.html">Solve RMQ by finding LCA</a></li>
-<li><a href="./graph/lca_tarjan.html">Lowest Common Ancestor - Tarjan's off-line algorithm</a></li>
-</ul></li>
-<li><strong>Flows and related problems</strong>
-
-<ul>
-<li><a href="./graph/edmonds_karp.html">Maximum flow - Ford-Fulkerson and Edmonds-Karp</a></li>
-<li><a href="./graph/push-relabel.html">Maximum flow - Push-relabel algorithm</a></li>
-<li><a href="./graph/push-relabel-faster.html">Maximum flow - Push-relabel algorithm improved</a></li>
-<li><a href="./graph/dinic.html">Maximum flow - Dinic's algorithm</a></li>
-<li><a href="./graph/mpm.html">Maximum flow - MPM algorithm</a></li>
-<li><a href="./graph/flow_with_demands.html">Flows with demands</a></li>
-<li><a href="./graph/min_cost_flow.html">Minimum-cost flow</a></li>
-<li><a href="./graph/Assignment-problem-min-flow.html">Assignment problem. Solution using min-cost-flow in O (N^5)</a></li>
-</ul></li>
-<li><strong>Matchings and related problems</strong>
-
-<ul>
-<li><a href="./graph/bipartite-check.html">Bipartite Graph Check</a></li>
-</ul></li>
-<li><strong>Miscellaneous</strong>
-
-<ul>
-<li><a href="./graph/topological-sort.html">Topological Sorting</a></li>
-<li><a href="./graph/edge_vertex_connectivity.html">Edge connectivity / Vertex connectivity</a></li>
-<li><a href="./graph/tree_painting.html">Tree painting</a></li>
-<li><a href="./graph/2SAT.html">2-SAT</a></li>
-<li><a href="./graph/hld.html">Heavy-light decomposition</a></li>
-</ul></li>
-</ul>
-
-<h3>Sequences</h3>
-
-<ul>
-<li><strong>Tasks</strong>
-
-<ul>
-<li><a href="./sequences/rmq.html">RMQ task (Range Minimum Query - the smallest element in an interval)</a></li>
-<li><a href="./sequences/longest_increasing_subsequence.html">Longest increasing subsequence</a></li>
-<li><a href="./sequences/k-th.html">K-th order statistic in O(N)</a></li>
-</ul></li>
-</ul>
-
-<h3>Schedules</h3>
-
-<ul>
-<li><strong>Computing optimal schedules</strong>
-
-<ul>
-<li><a href="./schedules/schedule_one_machine.html">Scheduling jobs on one machine</a></li>
-<li><a href="./schedules/schedule_two_machines.html">Scheduling jobs on two machines</a></li>
-<li><a href="./schedules/schedule-with-completion-duration.html">Optimal schedule of jobs given their deadlines and durations</a></li>
-</ul></li>
-</ul>
-
-<h3>Miscellaneous</h3>
-
-<ul>
-<li><strong>Tasks</strong>
-
-<ul>
-<li><a href="./others/josephus_problem.html">Josephus problem</a></li>
-<li><a href="./others/15-puzzle.html">15 Puzzle Game: Existence Of The Solution</a></li>
-<li><a href="./others/stern_brocot_tree_farey_sequences.html">The Stern-Brocot Tree and Farey Sequences</a></li>
-<li><a href="./others/maximum_average_segment.html">Search the subsegment with the maximum/minimum sum</a></li>
-</ul></li>
-</ul>
-
-<hr />
-
-<p><a href="./contrib.html">Information for contributors</a> and <a href="./test.php">Test-Your-Page form</a></p>
+<h1>Efficient integer factorization</h1>
+
+<p>In this article we list several algorithms for factorizing integers, each of them can be both fast and also very slowly depending on their input.
+But in sum they combine to a very fast method.</p>
+
+<h2>Trial division</h2>
+
+<p>This is the most basic algorithm to find a prime factorization.</p>
+
+<p>We divide by each possible divisor $d$.
+We can notice, that it is impossible that all prime factors of a composite number $n$ are bigger than $\sqrt{n}$.
+Therefore we only need to test the divisors $2 \le d \sqrt{n}$, which gives us the prime factorization in $O(\sqrt{n})$.</p>
+
+<p>The smallest divisor has to be a prime number.
+We remove the factor from the number, and repeat the process.
+If we cannot find any divisor in the range $[2; \sqrt{n}]$, then the number itself has to be prime.</p>
+
+<pre><code class="cpp">vector&lt;long long&gt; trial_division1(long long n) {
+    vector&lt;long long&gt; factorization;
+    for (long long d = 2; d * d &lt;= n; d++) {
+        while (n % d == 0) {
+            factorization.push_back(d);
+            n /= d;
+        }
+    }
+    if (n &gt; 1)
+        factorization.push_back(n);
+    return factorization;
+}
+</code></pre>
+
+<h3>Wheel factorization</h3>
+
+<p>The idea is the following.
+Once we know that the number is not divisible by 2, we don't need to check every other even number.
+This leaves us with only $50\%$ of the numbers to check.
+After checking 2, we can simply start with 3 and skip every other number.</p>
+
+<pre><code class="cpp">vector&lt;long long&gt; trial_division2(long long n) {
+    vector&lt;long long&gt; factorization;
+    while (n % 2 == 0) {
+        factorization.push_back(2);
+        n /= 2;
+    }
+    for (long long d = 3; d * d &lt;= n; d += 2) {
+        while (n % d == 0) {
+            factorization.push_back(d);
+            n /= d;
+        }
+    }
+    if (n &gt; 1)
+        factorization.push_back(n);
+    return factorization;
+}
+</code></pre>
+
+<p>This method can be extended.
+If the number is not divisible by 3, we can also ignore all other multiples of 3 in the future computations.
+So we only need to check the numbers $5, 7, 11, 13, 17, 19, 23, \dots$.
+We can observe a pattern of these remaining numbers.
+We need to check all numbers with $d \bmod 6 = 1$ and $d \bmod 6 = 5$.
+So this leaves us with only $33.3\%$ percent of the numbers to check.
+We can implement this by checking the primes 2 and 3 first, and then start checking with 5 and alternatively skip 1 or 3 numbers.</p>
+
+<p>We can extend this even further.
+Here is an implementation for the prime number 2, 3 and 5.
+It's convenient to use an array to store how much we have to skip.</p>
+
+<pre><code class="cpp">vector&lt;long long&gt; trial_division3(long long n) {
+    vector&lt;long long&gt; factorization;
+    for (int d : {2, 3, 5}) {
+        while (n % d == 0) {
+            factorization.push_back(d);
+            n /= d;
+        }
+    }
+    static array&lt;int, 8&gt; increments = {4, 2, 4, 2, 4, 6, 2, 6};
+    int i = 0;
+    for (long long d = 7; d * d &lt;= n; d += increments[i++]) {
+        while (n % d == 0) {
+            factorization.push_back(d);
+            n /= d;
+        }
+        if (i == 8)
+            i = 0;
+    }
+    if (n &gt; 1)
+        factorization.push_back(n);
+    return factorization;
+}
+</code></pre>
+
+<p>If we extend this further with more primes we can even reach better percentages.
+However also the skip lists will get a lot bigger.</p>
+
+<h3>Precomputed primes</h3>
+
+<p>Extending the wheel factorization with more and more primes will leave exactly the primes to check.
+So a good way of checking is just to precompute all prime numbers and test them individually.</p>
+
+<pre><code class="cpp">vector&lt;long long&gt; primes;
+
+vector&lt;long long&gt; trial_division4(long long n) {
+    vector&lt;long long&gt; factorization;
+    for (long long d : primes) {
+        if (d * d &gt; n)
+            break;
+        while (n % d == 0) {
+            factorization.push_back(d);
+            n /= d;
+        }
+    }
+    if (n &gt; 1)
+        factorization.push_back(n);
+    return factorization;
+}
+</code></pre>
+
+<h2>Pollard's $p - 1$ method</h2>
+
+<p>It is very likely that at least one factor of a number is $B$<strong>-powersmooth</strong> for small $B$.
+$B$-powersmooth means, that every power $d^k$ of a prime $d$ that divides $p-1$ is at most $B$.
+E.g. the prime factorization of $4817191$ are is $1303 \cdot 3697$.
+And the factors are $31$-powersmooth and $16$-powersmooth respectably, because $1303 - 1 = 2 \cdot 3 \cdot 7 \cdot 31$ and $3697 - 1 = 2^4 \cdot 3 \cdot 7 \cdot 11$.
+In 1974 John Pollard invented a method to extracts $B$-powersmooth factors from a composite number.</p>
+
+<p>The idea comes from <a href="./algebra/phi-function.html#application">Fermat's little theorem</a>.
+Let a factorization of $n$ be $n = p \cdot q$.
+It says that if $a$ is coprime to $p$, the following statement holds:</p>
+
+<p>$$a^{p - 1} \equiv 1 \pmod{p}$$</p>
+
+<p>This also means that</p>
+
+<p>$$a^{(p - 1)^k} \equiv a^{k \cdot (p - 1)} \equiv 1 \pmod{p}.$$</p>
+
+<p>So for any $M$ with $M ~|~ p - 1$ we know that $a^M \equiv 1$.
+This means that $a^M - 1 = p \cdot r$, and because of that also $p ~|~ \gcd(a^M - 1, n)$.</p>
+
+<p>Therefore if $p - 1$ for a factor $p$ of $n$ divides $M$, we can extract the factor $p$ by <a href="./algebra/euclid-algorithm.html">Euclid's algorithm</a>.</p>
+
+<p>It is clear, that the smallest $M$ that can is a multiple of every $B$-powersmooth number is $\text{lcm}(1,~2~,3~,4~,~\dots,~B)$.
+Or alternatively:
+$$M = \prod_{\text{prime } q \le B} q^{\lfloor \log_q B \rfloor}$$</p>
+
+<pre><code class="cpp">vector&lt;int&gt; primes_100 = {2, 3, 5, 7, 11, 13, 17, 19, 23, 
+                          29, 31, 37, 41, 43, 47, 53, 59,
+                          61, 67, 71, 73, 79, 83, 89, 97};
+int B = 100;
+
+long long pollards_p_minus_1(long long n) {
+    // perform 5 iterations with random a
+    for (int iter = 1; iter &lt;= 5; iter++) {
+        long long a = rand() %  n;
+
+        // test if a gives already a factor
+        long long g = gcd(a, n);
+        if (g &gt; 1)
+            return g;
+
+        // compute a^M
+        for (int p : primes_100) {
+            int p_power = 1;
+            while (p_power * p &lt;= B)
+                p_power *= p;
+            a = power(a, p_power, n);
+
+            g = gcd(a - 1, n);
+            if (g &gt; 1 &amp;&amp; g &lt; n)
+                return g;
+        }
+    }
+    return 1;
+}
+</code></pre>
+
+<p>Notice, this is a probabilistic algorithm.
+It doesn't find a factor for every number.</p>
+
+<p>The complexity is $O(B \log B \log^2 n)$ per iteration.</p>
+
+<h2>Pollard's rho algorithm</h2>
+
+<p>Another factorization algorithm from John Pollard.</p>
+
+<p>Let the prime factorization from a number be $n = p q$.
+The algorithm look at a pseudo-random sequence $&#123;x_i&#125; = &#123;x_0,~f(x_0),~f(f(x_0)),~\dots&#125;$ where $f$ is a polynomial function, usually $f(x) = x^2 + c \bmod n$ is chosen with $c = 1$.</p>
+
+<p>Actually we are not very interested in the sequence $&#123;x_i&#125;$, we are more interested in the sequence $&#123;x_i \bmod p&#125;$.
+Since $f$ is a polynomial function and all the values are in the range $[0;~p)$ this sequence will begin to cycle sooner or later.
+The <strong>birthday paradox</strong> actually suggests, that the expected number of elements is $O(\sqrt{p})$ until the repetition starts.
+If $p$ is smaller than $\sqrt{n}$, the repetition will start very likely in $O(\sqrt[4]{n})$.</p>
+
+<p>Here is a visualization of such a sequence $&#123;x_i \bmod p&#125;$ with $n = 2206637$, $p = 317$, $x_0 = 2$ and $f(x) = x^2 + 1$.
+From the form of the sequence you can see very clearly why the algorithm is called Pollard's $\rho$ algorithm.</p>
+
+<p><center><img src="https://image.ibb.co/etmP3L/pollard-rho.png" alt="Pollard's rho visualization" /></center>
+<!-- %imgroot%/pollard_rho.png)</center> --></p>
+
+<p>There is still one big open question.
+We don't know $p$ yet, so how can we argue about the sequence $&#123;x_i \bmod p&#125;$?</p>
+
+<p>It's quite easy.
+Even if we don't know $p$ and the cycle-start, cycle-length, ... we can find it using any common cycle detection algorithm.
+There is a cycle in the sequence $&#123;x_i \bmod p&#125;_{i \le j}$ if and only if there are two indices $s, t \le j$ and $t$ with $x_s \bmod p = x_t \bmod p$.
+This equation can be rewritten as $x_s - x_t \equiv 0 \bmod p$ which is the same as $p ~|~ \gcd(x_s - x_t, n)$.</p>
+
+<p>Therefore if we find two indices $s$ and $t$ with $g = \gcd(x_s - x_t, n) > 1$, we have found a factor $g$ of $n$.
+Notice that it is possible that $g = n$.
+In this case we haven't found a proper factor, and we have to repeat the algorithm with different parameter (different starting value $x_0$, different constant $c$ in the polynomial function $f$).</p>
+
+<p>To find the cycle efficiently, we can use <strong>Floyd's cycle-finding algorithm</strong>, which finds the cycle in linear time.
+Therefore the algorithm runs (usually) in $O(\sqrt[4]{n} \log(n))$ time.</p>
+
+<p>The following code includes a function <code>mult</code>, that multiplies two integers $\le 10^18$ without overflow using a similar idea as <a href="./algebra/binary-exp.html">binary exponentiation</a>.</p>
+
+<pre><code class="cpp">long long mult(long long a, long long b, long long mod) {
+    long long result = 0;
+    while (b) {
+        if (b &amp; 1)
+            result = (result + a) % mod;
+        a = (a + a) % mod;
+        b &gt;&gt;= 1;
+    }
+    return result;
+}
+
+long long f(long long x, long long c, long long mod) {
+    return (mult(x, x, mod) + c) % mod;
+}
+
+long long rho(long long n, long long x0=2, long long c=1) {
+    long long x = x0;
+    long long y = x0;
+    long long g = 1;
+    while (g == 1) {
+        x = f(x, c, n);
+        y = f(y, c, n);
+        y = f(y, c, n);
+        g = gcd(abs(x - y), n);
+    }
+    return g;
+}
+</code></pre>
+
+<p>As already noticed above: if $n$ is composite and the algorithm doesn't return $n$ as factor, you have to repeat the procedure with different parameter $x_0$ and $c$.</p>
+
+<p>And the following table shows the values of $x$ and $y$ during the algorithm for $n = 2206637$, $x_0 = 2$ and $c = 1$.</p>
+
+<p>$$
+\newcommand\T{\Rule{0pt}{1em}{.3em}}
+\begin{array}{|l|l|l|l|l|l|}
+\hline
+i &amp; x_i \bmod n &amp; x_{2i} \bmod n &amp; x_i \bmod 317 &amp; x_{2i} \bmod 317 &amp; \gcd(x_i - x_{2i}, n) &#92;&#92;
+\hline
+0   &amp; 2       &amp; 2       &amp; 2       &amp; 2       &amp; -   &#92;&#92;
+1   &amp; 5       &amp; 26      &amp; 5       &amp; 26      &amp; 1   &#92;&#92;
+2   &amp; 26      &amp; 458330  &amp; 26      &amp; 265     &amp; 1   &#92;&#92;
+3   &amp; 677     &amp; 1671573 &amp; 43      &amp; 32      &amp; 1   &#92;&#92;
+4   &amp; 458330  &amp; 641379  &amp; 265     &amp; 88      &amp; 1   &#92;&#92;
+5   &amp; 1166412 &amp; 351937  &amp; 169     &amp; 67      &amp; 1   &#92;&#92;
+6   &amp; 1671573 &amp; 1264682 &amp; 32      &amp; 169     &amp; 1   &#92;&#92;
+7   &amp; 2193080 &amp; 2088470 &amp; 74      &amp; 74      &amp; 317 &#92;&#92;
+\hline
+\end{array}$$</p>
 
     <div id="footer">
     (c) 2014-2018 translation by <a href="http://github.com/e-maxx-eng">http://github.com/e-maxx-eng</a>
